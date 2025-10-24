@@ -1,0 +1,23 @@
+{
+  "name": "pro-funman",
+  "version": "1.0.0",
+  "description": "A simple web page app with homepage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "web",
+    "homepage"
+  ],
+  "author": "sufyanaslam44",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
