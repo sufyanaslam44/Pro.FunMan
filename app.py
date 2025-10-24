@@ -6,12 +6,17 @@ app = Flask(__name__, template_folder='.')
 @app.route('/')
 def home():
     """Serve the homepage"""
-    return send_from_directory('.', 'index.html')
+    return send_from_directory('.', 'pt.html')
 
 @app.route('/pt.html')
 def periodic_table():
     """Serve the periodic table page"""
     return send_from_directory('.', 'pt.html')
+
+@app.route('/index.html')
+def index():
+    """Serve the old index page"""
+    return send_from_directory('.', 'index.html')
 
 @app.route('/<path:filename>')
 def serve_static(filename):
